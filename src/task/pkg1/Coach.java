@@ -11,15 +11,16 @@ package task.pkg1;
  */
 public class Coach extends Person {
     private int coachID;
-    Player p1;
-    Team t1;
+    Player p1; 
+    Team t1; 
     public Coach(String newName , String newAddress , int newID , Player newPlayer) {
     super(newName,newAddress);
     this.coachID=newID;
-    this.p1=newPlayer;
+    this.p1=newPlayer; // Aggreation with player class
     }
     
  public void manageTeam(Team newTeam){
+     // Composite with team class
      this.t1=newTeam;
  }
 
